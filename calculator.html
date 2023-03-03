@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scientific Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="calculator">
+		<div class="display">
+			<input type="text" id="result" value="0" disabled>
+		</div>
+		<div class="buttons">
+			<button id="sin" class="func-button">sin</button>
+			<button id="cos" class="func-button">cos</button>
+			<button id="tan" class="func-button">tan</button>
+			<button id="log" class="func-button">log</button>
+			<button id="seven" class="num-button">7</button>
+			<button id="eight" class="num-button">8</button>
+			<button id="nine" class="num-button">9</button>
+			<button id="divide" class="operator-button">/</button>
+			<button id="four" class="num-button">4</button>
+			<button id="five" class="num-button">5</button>
+			<button id="six" class="num-button">6</button>
+			<button id="multiply" class="operator-button">*</button>
+			<button id="one" class="num-button">1</button>
+			<button id="two" class="num-button">2</button>
+			<button id="three" class="num-button">3</button>
+			<button id="subtract" class="operator-button">-</button>
+			<button id="zero" class="num-button">0</button>
+			<button id="decimal" class="num-button">.</button>
+			<button id="clear" class="clear-button">C</button>
+			<button id="add" class="operator-button">+</button>
+			<button id="left-parenthesis" class="parenthesis-button">(</button>
+			<button id="right-parenthesis" class="parenthesis-button">)</button>
+			<button id="equals" class="equals-button">=</button>
+			<button id="pi" class="num-button">π</button>
+			<button id="log-display" class="log-button">Show Log</button>
+		</div>
+	</div>
+
+	<div id="log-modal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<h3>Calculation Log</h3>
+			<pre id="log-text"></pre>
+		</div>
+	</div>
+
+	<script src="calculator.js"></script>
+</body>
+</html>

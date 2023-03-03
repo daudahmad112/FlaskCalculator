@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculation Log</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+		}
+
+		table {
+			margin: 0 auto;
+			border-collapse: collapse;
+			border: 1px solid #ddd;
+			width: 80%;
+			max-width: 800px;
+		}
+
+		th, td {
+			border: 1px solid #ddd;
+			padding: 10px;
+			text-align: left;
+		}
+
+		th {
+			background-color: #f2f2f2;
+		}
+
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		#back-button {
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Calculation Log</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Timestamp</th>
+				<th>Calculation</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for calculation in calculations %}
+			<tr>
+				<td>{{ calculation.timestamp }}</td>
+				<td>{{ calculation.calculation }}</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+	<div id="back-button">
+		<a href="/">Back to Calculator</a>
+	</div>
+</body>
+</html>
